@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.main {
+    background-color: #0E1116;
+}
+
+.wrapper {
+    padding: 0.8rem;
+}
+
+/* .sample-div{
+    min-height: 120vh;
+    background-color: bisque;
+} */
+
+.tiles-grid {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 0.12rem;
+}
+
+.tile {
+    color: #616283;
+    /* color: #ddc6f0; */
+    height: 6rem;
+}
+
+.tile img{
+    max-width: 4rem;
+    min-height: 2.8rem;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    /* transform: scale(0.3); */
+    transition: all 2s;
+}
+
+.show {
+    filter: blur(0);
+    /* transform: scale(1); */
+    opacity: 1;
+}
+
+.tiles-grid .tile:nth-child(1){
+    transition-delay: 200ms;
+    background-color: #002db3;
+}
+
+.tiles-grid .tile:nth-child(2){
+    transition-delay: 400ms;
+    background-color: #809fff;
+}
+
+.tiles-grid .tile:nth-child(3){
+    transition-delay: 600ms;
+    background-color: #bfcfff;
+}
+
+.tiles-grid .tile:nth-child(4){
+    transition-delay: 800ms;
+    background-color: #002db3;
+}
+
+.tiles-grid .tile:nth-child(5){
+    transition-delay: 1000ms;
+    background-color: #809fff;
+}
+
+.tiles-grid .tile:nth-child(6){
+    transition-delay: 1200ms;
+    background-color: #bfcfff;
+}
+
+.tiles-grid .tile:nth-child(7){
+    transition-delay: 1400ms;
+    background-color: #002db3;
+}
+
+.tiles-grid .tile:nth-child(8){
+    transition-delay: 1600ms;
+    background-color: #809fff;
+}
+
+.tiles-grid .tile:nth-child(9){
+    transition-delay: 1800ms;
+    background-color: #bfcfff;
+}

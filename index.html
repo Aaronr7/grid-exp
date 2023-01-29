@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>grid example</title>
+</head>
+
+<body>
+    <div class="sample-div"></div>
+    <main class="main">
+        <section class="sample-section">
+        <div class="wrapper">
+            <div class="tiles-grid">
+                <article class="tile hidden">
+                    <img src="svg/phone.svg" alt="" srcset="">
+                </article>
+                <article class="tile hidden">
+                    <img src="svg/alarmclock.svg" alt="" srcset="">
+                </article>
+                <article class="tile hidden">
+                    <img src="svg/group.svg" alt="" srcset="">
+                </article>
+                <article class="tile hidden">
+                    <img src="svg/cloud.svg" alt="" srcset="">
+                </article>
+                <article class="tile hidden">
+                    <img src="svg/check.svg" alt="" srcset="">
+                </article>
+                <article class="tile hidden">
+                    <img src="svg/world.svg" alt="" srcset="">
+                </article>
+                <article class="tile hidden">
+                    <img src="svg/box.svg" alt="" srcset="">
+                </article>
+                <article class="tile hidden">
+                    <img src="svg/glasses.svg" alt="" srcset="">
+                </article>
+                <article class="tile hidden">
+                    <img src="svg/file.svg" alt="" srcset="">
+                </article>
+            </div>
+        </div>
+        </section>
+    </main>
+    <script defer>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+
+                // else {
+                //     setTimeout(entry.target.classList.remove('show'), 10000);
+                // }
+
+                // We're not intersecting, so remove the class!
+                // square.classList.remove('square-animation');
+            });
+        });
+        const hiddenElements = document.querySelectorAll('.tile.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+</body>
+
+</html>
