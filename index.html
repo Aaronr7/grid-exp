@@ -13,44 +13,64 @@
     <div class="sample-div"></div>
     <main class="main">
         <section class="sample-section">
-        <div class="wrapper">
-            <div class="tiles-grid">
-                <article class="tile hidden">
-                    <img src="svg/phone.svg" alt="" srcset="">
-                </article>
-                <article class="tile hidden">
-                    <img src="svg/alarmclock.svg" alt="" srcset="">
-                </article>
-                <article class="tile hidden">
-                    <img src="svg/group.svg" alt="" srcset="">
-                </article>
-                <article class="tile hidden">
-                    <img src="svg/cloud.svg" alt="" srcset="">
-                </article>
-                <article class="tile hidden">
-                    <img src="svg/check.svg" alt="" srcset="">
-                </article>
-                <article class="tile hidden">
-                    <img src="svg/world.svg" alt="" srcset="">
-                </article>
-                <article class="tile hidden">
-                    <img src="svg/box.svg" alt="" srcset="">
-                </article>
-                <article class="tile hidden">
-                    <img src="svg/glasses.svg" alt="" srcset="">
-                </article>
-                <article class="tile hidden">
-                    <img src="svg/file.svg" alt="" srcset="">
-                </article>
+            <h1 class="text-primary-color">Grid by example</h1>
+            <div class="wrapper">
+                <div class="tiles-grid">
+                    <article class="tile hidden">
+                        <img src="svg/phone.svg" alt="" srcset="">
+                    </article>
+                    <article class="tile hidden">
+                        <img src="svg/alarmclock.svg" alt="" srcset="">
+                    </article>
+                    <article class="tile hidden">
+                        <img src="svg/group.svg" alt="" srcset="">
+                    </article>
+                    <article class="tile hidden">
+                        <img src="svg/cloud.svg" alt="" srcset="">
+                    </article>
+                    <article class="tile hidden">
+                        <img src="svg/check.svg" alt="" srcset="">
+                    </article>
+                    <article class="tile hidden">
+                        <img src="svg/world.svg" alt="" srcset="">
+                    </article>
+                    <article class="tile hidden">
+                        <img src="svg/box.svg" alt="" srcset="">
+                    </article>
+                    <article class="tile hidden">
+                        <img src="svg/glasses.svg" alt="" srcset="">
+                    </article>
+                    <article class="tile hidden">
+                        <img src="svg/file.svg" alt="" srcset="">
+                    </article>
+                </div>
+                <div class="scroll-down">
+                    <p><small>scroll</small></p>
+                    <img src="img/down-arrow.png" alt="">
+                </div>
             </div>
-        </div>
+        </section>
+        <section class="images-section">
+            <div class="wrapper">
+                <div class="images-grid">
+                    <!-- Photo by Nicole Avagliano: https://www.pexels.com/photo/blue-jellyfish-in-water-2803247/ -->
+                    <img src="img/jellys.jpg" alt="Photo by Nicole Avagliano" class="jellys">
+                    <img src="img/floral.jpg" alt="" class="floral">
+                    <img src="img/dunes.jpg" alt="" class="dunes">
+                </div>
+                <div class="images-info-container">
+                    <h2 class="text-primary-color">
+                        6 columns x 10 rows grid
+                    </h2>
+                </div>
+            </div>
         </section>
     </main>
     <script defer>
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
+                    setTimeout(entry.target.classList.add('show'), 1000);
                 }
 
                 // else {

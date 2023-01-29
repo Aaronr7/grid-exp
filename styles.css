@@ -21,35 +21,42 @@ body {
     min-height: 100vh;
 }
 
+.text-primary-color{
+    color: #F3F3F3;
+}
+
 .main {
     background-color: #0E1116;
-    min-height: 100vh;
+}
+
+.sample-section{
+    padding-top: 0.2rem;
+    min-height: 100vh;   
+}
+
+.sample-section h1{
+    font-family: 'Arial', 'Roboto', 'Segoe UI', Helvetica, sans-serif, sans-serif;
+    padding-top: 0.2rem;
+    padding-left: 0.8rem;
 }
 
 .wrapper {
-    padding: 0.8rem;
+    padding: 2rem 0.8rem 0.8rem 0.8rem;
 }
-
-/* .sample-div{
-    min-height: 120vh;
-    background-color: bisque;
-} */
 
 .tiles-grid {
     display: grid;
     place-content: center;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 7.2rem);
     grid-auto-rows: auto;
     gap: 0.12rem;
 }
 
 .tile {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    color: #616283;
-    /* color: #ddc6f0; */
     height: 6rem;
+    border-radius: 0.2rem;
 }
 
 .tile img{
@@ -113,4 +120,75 @@ body {
 .tiles-grid .tile:nth-child(9){
     transition-delay: 1800ms;
     background-color: #bfcfff;
+}
+
+.scroll-down{
+    padding-top: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-down img{
+    width: 2.2rem;
+    filter: invert(1);
+}
+
+.scroll-down p{
+    padding-bottom: 0.2rem;
+    color: rgb(187, 100, 0);
+    font-family: 'Arial', 'Roboto', 'Segoe UI', Helvetica, sans-serif, sans-serif;
+}
+
+
+.images-section{
+    min-height: 100vh;
+    background-color: #0E1116;
+}
+
+.images-grid{
+    display: grid;
+    place-content: center;
+    grid-auto-columns: 3.62rem;
+    grid-auto-rows: 3.62rem;
+    grid-template-areas: 
+        "one one two two three three"
+        "one one two two three three"
+        "one one blank blank blank blank"
+        "one one five five five five"
+        "one one five five five five"
+        "one one five five five five"
+        "one one five five five five"
+        "one one empty seven seven seven "
+        "one one empty seven seven seven"
+        "one one empty seven seven seven"
+        ;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.images-grid .jellys{
+    width: 15rem;
+    grid-area: one;
+    border-radius: 0.544rem;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+.images-grid .floral{
+    width: 12rem;
+    grid-area: five;
+    border-radius: 0.544rem;
+}
+
+.images-grid .dunes{
+    width: 14rem;
+    grid-area: seven;
+    border-radius: 0.544rem;
+}
+
+.images-info-container h2{
+    font-family: 'Arial', 'Roboto', 'Segoe UI', Helvetica, sans-serif, sans-serif;
+    text-align: end;
 }
