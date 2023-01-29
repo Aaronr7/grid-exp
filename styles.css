@@ -26,12 +26,15 @@ body {
 }
 
 .main {
+    display: grid;
+    place-content: center;
     background-color: #0E1116;
 }
 
 .sample-section{
+    max-width: 25rem;
     padding-top: 0.2rem;
-    min-height: 100vh;   
+    min-height: 98vh;   
 }
 
 .sample-section h1{
@@ -123,7 +126,7 @@ body {
 }
 
 .scroll-down{
-    padding-top: 16rem;
+    padding-top: 13rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -143,6 +146,7 @@ body {
 
 
 .images-section{
+    max-width: 25rem;
     min-height: 100vh;
     background-color: #0E1116;
 }
