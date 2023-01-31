@@ -17,6 +17,7 @@ dd {
 
 body {
     font-size: 16px;
+    font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', sans-serif, sans-serif;
     padding: 0;
     min-height: 100vh;
     background-color: #0E1116;
@@ -41,7 +42,6 @@ body {
 }
 
 .sample-section h1{
-    font-family: 'Arial', 'Roboto', 'Segoe UI', Helvetica, sans-serif, sans-serif;
     padding-top: 0.2rem;
     padding-left: 0.8rem;
 }
@@ -144,13 +144,12 @@ body {
 .scroll-down p{
     padding-bottom: 0.2rem;
     color: rgb(187, 100, 0);
-    font-family: 'Arial', 'Roboto', 'Segoe UI', Helvetica, sans-serif, sans-serif;
 }
 
 
 .images-section{
     max-width: 25rem;
-    min-height: 99.8vh;
+    min-height: 95.8vh;
     padding-top: 0.2rem;
     background-color: #0E1116;
 }
@@ -208,6 +207,54 @@ img.show{
 }
 
 .images-info-container h2{
-    font-family: 'Arial', 'Roboto', 'Segoe UI', Helvetica, sans-serif, sans-serif;
     text-align: end;
+}
+
+.blogs-section{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-auto-rows: auto;
+    place-content: center;
+    background-color: #1b212b;
+}
+
+.blogs-hgroup{
+    padding: 0.54rem;
+}
+
+.blogs{
+    padding: 0.6rem 0.3rem 1.24rem 0.3rem;
+    max-width: 25rem;
+    display: grid;
+    grid-auto-flow: column;
+    /* grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 1fr; */
+    gap: 0.5rem;
+    overflow: scroll;
+}
+
+.gradient-bg{
+    background: linear-gradient(173deg, #192341 0%, #31353b 100%);    
+}
+
+.blog-card{
+    width: 11.2rem;
+    height: 14.4rem;
+    padding: 1rem 1.2rem;
+    border-radius: 7px;
+}
+
+.alt-heading{
+    color: #cfcfcf;
+    font-size: 1.1rem;
+}
+
+footer{
+    height: 10rem; 
+    background-color: #0E1116;
+    color: grey; 
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.9rem;
 }
