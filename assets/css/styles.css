@@ -421,6 +421,47 @@ img.show{
     grid-row: 8/9;
 }
 
+.copy-quote-section{
+    min-height: 100vh;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-auto-rows: auto;
+    place-content: center;
+    background-color: #00102c;
+    overflow: hidden;
+}
+
+.copy-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 4.3rem);
+    grid-template-rows: repeat(4, 4rem);
+    place-content: center;
+    max-width: 25rem;
+    isolation: isolate;
+}
+
+.copy-title{
+    line-height: 3.9rem;
+    margin-top: -3.5rem;
+    grid-column: 1 / 5;
+    grid-row: 1 / span;
+    font-weight: 700;
+    font-size: 4rem;
+    color: #cedaff;
+}
+
+.copy-grid .geofigure{
+    grid-column: 1 / span;
+    grid-row: 1 / span;
+    position: relative;
+    margin-left: -1rem;
+    clip-path: circle(40%);
+    width: 20rem;
+    height: 20rem;
+    transform: skewX(20deg);
+    z-index: -1;
+    background-color: #002db3;
+}
 
 
 footer{
