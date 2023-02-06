@@ -488,8 +488,9 @@ img.show{
 }
 
 .figure2{
-    width: 7rem;
-    height: 7rem;
+    width: 9.4rem;
+    height: 9.4rem;
+    clip-path: circle(40%);
     transform: skewX(20deg);
     grid-column: 2/4;
     grid-row: 2/5;
@@ -497,11 +498,21 @@ img.show{
 }
 
 .figure3{
-    width: 7rem;
+    width: 8rem;
     height: 7rem;
     grid-column: 4/6;
     grid-row: 3/6;
     background-color: #e63018;
+}
+
+.filter-div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    opacity: 0.2;
+    backdrop-filter: blur(4px);
+    min-height: 100vh;
 }
 
 footer{
