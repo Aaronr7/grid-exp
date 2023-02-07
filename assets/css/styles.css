@@ -488,8 +488,8 @@ img.show{
 }
 
 .figure2{
-    width: 9.4rem;
-    height: 9.4rem;
+    width: 12rem;
+    height: 12rem;
     clip-path: circle(40%);
     transform: skewX(20deg);
     grid-column: 2/4;
@@ -498,15 +498,15 @@ img.show{
 }
 
 .figure3{
-    width: 8rem;
-    height: 7rem;
+    width: 9rem;
+    height: 8rem;
     grid-column: 4/6;
     grid-row: 3/6;
     background-color: #e63018;
 }
 
 .filter-div{
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     background-color: transparent;
