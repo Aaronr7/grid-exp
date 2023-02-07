@@ -509,10 +509,8 @@ img.show{
     position: relative;
     top: 0;
     left: 0;
-    background-color: transparent;
-    opacity: 0.2;
     backdrop-filter: blur(4px);
-    min-height: 100vh;
+    min-height: 99.8vh;
     width:24.9rem;
 }
 
