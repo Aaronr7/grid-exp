@@ -472,6 +472,7 @@ img.show{
 }
 
 .figures-grid{
+    position: absolute;
     width: 25rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -506,11 +507,8 @@ img.show{
 }
 
 .filter-div{
-    position: relative;
-    top: 0;
-    left: 0;
-    backdrop-filter: blur(4px);
-    min-height: 99.8vh;
+    backdrop-filter: blur(14px);
+    height: 100vh;
     width:24.9rem;
 }
 
