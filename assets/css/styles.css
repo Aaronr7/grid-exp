@@ -488,9 +488,9 @@ img.show{
 }
 
 .figure2{
-    width: 12rem;
-    height: 12rem;
-    clip-path: circle(40%);
+    width: 14rem;
+    height: 22rem;
+    clip-path: polygon(0 3%, 52% 14%, 82% 100%, 3% 90%);
     transform: skewX(20deg);
     grid-column: 2/4;
     grid-row: 2/5;
