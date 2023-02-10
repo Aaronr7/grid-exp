@@ -500,8 +500,8 @@ img.show{
 .figure3{
     width: 9rem;
     height: 8rem;
-    grid-column: 4/6;
-    grid-row: 3/6;
+    grid-column: 9/11;
+    grid-row: 6/8;
     background-color: #e63018;
 }
 
