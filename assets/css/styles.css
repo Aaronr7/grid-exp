@@ -474,7 +474,7 @@ img.show{
 
 .figures-grid{
     display: grid;
-    grid-template-columns: repeat(8, 9.62vw);
+    grid-template-columns: repeat(4, 8.62vw);
     grid-template-rows: repeat(10, 9vh);
     place-content: center;
     isolation: isolate;
@@ -493,7 +493,7 @@ img.show{
     height: 22rem;
     clip-path: polygon(0 3%, 52% 14%, 82% 100%, 3% 90%);
     transform: skewX(20deg);
-    grid-column: 3/5;
+    grid-column: 1/3;
     grid-row: 3/6;
     background-color: #cedaff;
 }
@@ -501,7 +501,7 @@ img.show{
 .figure3{
     width: 9rem;
     height: 8rem;
-    grid-column: 5/7;
+    grid-column: 2/4;
     grid-row: 6/8;
     background-color: #e63018;
 }
