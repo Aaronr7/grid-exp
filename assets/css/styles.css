@@ -506,9 +506,12 @@ img.show{
 }
 
 .filter-div{
+    position: relative;
+    top: -18rem;
+    left: 0;
     backdrop-filter: blur(14px);
-    height: 100vh;
-    width:25.02rem;
+    height: 18rem;
+    width:25rem;
 }
 
 footer{
