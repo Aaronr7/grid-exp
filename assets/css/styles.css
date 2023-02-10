@@ -472,10 +472,10 @@ img.show{
 }
 
 .figures-grid{
-    width: 25rem;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(7, 3rem);
+    grid-template-columns: repeat(10, 10vw);
+    grid-template-rows: repeat(10, 9vh);
+    place-content: center;
     isolation: isolate;
 }
 
@@ -507,11 +507,10 @@ img.show{
 
 .filter-div{
     position: relative;
-    top: -21rem;
+    top: -90vh;
     left: 0;
     backdrop-filter: blur(14px);
-    height: 18rem;
-    width:30rem;
+    height: 90vh;
 }
 
 footer{
