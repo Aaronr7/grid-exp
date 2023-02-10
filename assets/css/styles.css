@@ -469,6 +469,7 @@ img.show{
     grid-auto-rows: auto;
     grid-auto-rows: auto;
     place-content: center;
+    overflow-x: hidden;
 }
 
 .figures-grid{
